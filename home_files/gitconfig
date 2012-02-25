@@ -1,0 +1,32 @@
+[color]
+    ui = auto
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+
+[alias]
+    lg = log --graph --decorate --pretty=oneline --abbrev-commit
+    lga = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[user]
+	name = Ralph Smith
+	email = ralphsmith80@gmail.com
+
+[core]
+	excludesfile = /Users/ralphs/.gitignore_global
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

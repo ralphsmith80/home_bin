@@ -1,0 +1,86 @@
+### path manipulations
+[ -d /usr/local/bin ] && export PATH="/usr/local/bin:$PATH"
+[ -d /usr/local/sbin ] && export PATH="/usr/local/sbin:$PATH"
+
+[ -d /usr/local/mysql/bin ] && export PATH="$PATH:/usr/local/mysql/bin"
+
+[ -d $HOME/Workspace/bin ] && export PATH="$PATH:$HOME/Workspace/bin"
+
+# Your previous /Users/ralphs/.profile file was backed up as /Users/ralphs/.profile.macports-saved_2011-07-16_at_15:01:12
+# MacPorts Installer addition on 2011-07-16_at_15:01:12: adding an appropriate PATH variable for use with MacPorts.
+[ -d /opt/local/bin ] && export PATH="/opt/local/bin:$PATH"
+[ -d /opt/local/sbin ] && export PATH="/opt/local/sbin:$PATH"
+
+
+### aliasing for convenience
+alias ll='ls -l'
+alias la='ls -la'
+alias grep="grep --color"
+alias e='exit'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+
+### one vim to find them, one vim to rule them all... 
+[ -f '/Applications/MacVim.app/Contents/MacOS/Vim' ] && 
+	export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
+
+
+### other exports
+export EDITOR=vim
+if [ "$TERM" = "xterm-256color" ]; then
+    export PS1="
+\[\e[38;5;247m\]\u\[\e[38;5;87m\]@\[\e[38;5;247m\]\h\[\e[38;5;87m\]:\[\e[38;5;255m\]\w     \[\e[38;5;30m\]\T \[\e[38;5;30m\]\D{%d-%b}\[\e[0;1m\] 
+\[\e[38;5;87m\]$\[\e[0m\] "
+else
+    export PS1="
+\[\e[38;5;195m\]\u\[\e[38;5;196m\]@\[\e[32m\]\h\[\e[33m\]:\w     \[\e[35m\]\T \[\e[31m\]\D{%d-%b}\[\e[0;1m\] 
+$\[\e[0m\] "
+fi
+
+
+export LSCOLORS=dxfxcxdxbxegedabagacad
+if [ `uname` = "Linux" ]; then
+    alias ls='ls --color=auto'
+    alias ll='ls -l --color=auto'
+    alias la='ls -la --color=auto'
+    eval "$(dircolors -b ~/.dir_colors)"
+fi
+export CLICOLOR="true"
+
+
+
+# and this is where i set up tab completion for python
+[ -f ~/.pythonrc ] && export PYTHONSTARTUP="$HOME/.pythonrc"
+
+# and the npm completion
+#[ -f "$HOME/bin/home_files/npm-completion.bash" ] && which npm &>/dev/null && \
+#	source "$HOME/bin/home_files/npm-completion.bash"
+
+# and my BALLER hack to node.js...
+#[ -f ~/.noderc ] && export NODE_STARTUP="$HOME/.noderc"
+
+# and django completion
+#[ -f "$HOME/bin/home_files/django-completion.bash" ] && \
+#    which django-admin.py &>/dev/null && \
+#	source "$HOME/bin/home_files/django-completion.bash"
+
+
+# lifted these from @zeeg
+#function pyfind() {
+#	x=`python -c "import $1; print $1.__file__" | sed 's/\.pyc$/\.py/'`
+#	if [ $? -ne 0 ]; then 
+#		exit $?
+#	fi
+#	grep -q "__init__.py$" <<< $x && echo `dirname $x` || echo $x
+#}
+
+
+#Add my ssh key
+[ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
+
+#StoreIQ helpers
+[ -f ~/.ssh/id_dsa_storediq ] && ssh-add ~/.ssh/id_dsa_storediq
+alias syncaa='cd /Users/ralphs/Workspace/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
+

@@ -1,0 +1,13 @@
+#XTerm*background: steelblue4
+XTerm*background: black
+XTerm*foreground: green
+XTerm*jumpScroll: true
+XTerm*rightScrollBar: true
+XTerm*scrollBar: true
+XTerm*saveLines: 1500
+XTerm*borderColor: green
+
+XTerm*title: Ralph's Sweet Terminal
+
+#let g:solarized_termcolors=256
+#colorscheme:solorized

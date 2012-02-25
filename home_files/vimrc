@@ -1,0 +1,25 @@
+"" set the color scheme
+colorscheme ron
+"call pathogen#infect()
+syntax on
+"filetype plugin indent on
+
+"if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
+"colorscheme solarized
+"let g:solarized_contrast='high'
+
+"" set some editor defaults 
+set number
+set tabstop=4
+set expandtab
+set ruler
+
+"" make markup languages a shiftwidth of 2
+au Filetype htmldjango,html,coffee,ruby,css,less setlocal sw=2 sts=2 ts=2 textwidth=0
+
+"" my fix for the django-templates bundle
+au BufNewFile,BufRead *.djt set ft=htmldjango
