@@ -1,16 +1,9 @@
 "" set the color scheme
 colorscheme ron
-"call pathogen#infect()
 syntax on
-"filetype plugin indent on
 
-"if has('gui_running')
-"    set background=light
-"else
-"    set background=dark
-"endif
-"colorscheme solarized
-"let g:solarized_contrast='high'
+""" set font
+set guifont=Menlo:h11
 
 "" set some editor defaults 
 set number
