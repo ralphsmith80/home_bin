@@ -14,7 +14,7 @@ fi
 
 # the special cases
 remove_references "$HOME/.ssh/config"
-cp $home_files_dir/ssh_config $HOME/.ssh/config
+ln -s $home_files_dir/ssh_config $HOME/.ssh/config
 
 # the rest of the config files
 for i in profile bashrc vimrc pythonrc gitconfig dir_colors Xdefaults\

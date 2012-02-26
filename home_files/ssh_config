@@ -1,8 +1,12 @@
 Host ru
-	HostName ralphunlimited.com
-	User ralphs
+    HostName ralphunlimited.com
+    User ralphs
     ForwardX11 yes
 
+Host gitru
+    HostName ralphunlimited.com
+    User gitosis
+
 Host aa
-	HostName appapp143.storediq.com
-	User root
+    HostName appapp143.storediq.com
+    User root
