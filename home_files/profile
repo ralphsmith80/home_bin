@@ -54,17 +54,23 @@ export CLICOLOR="true"
 # and this is where i set up tab completion for python
 [ -f ~/.pythonrc ] && export PYTHONSTARTUP="$HOME/.pythonrc"
 
+# and git completion
+[ -f "$HOME/bin/home_files/git-completion.bash" ] && \
+    which git &>/dev/null && \
+	source "$HOME/bin/home_files/git-completion.bash"
+
 # and the npm completion
-#[ -f "$HOME/bin/home_files/npm-completion.bash" ] && which npm &>/dev/null && \
-#	source "$HOME/bin/home_files/npm-completion.bash"
+[ -f "$HOME/bin/home_files/npm-completion.bash" ] && 
+    which npm &>/dev/null && \
+	source "$HOME/bin/home_files/npm-completion.bash"
 
 # and my BALLER hack to node.js...
 #[ -f ~/.noderc ] && export NODE_STARTUP="$HOME/.noderc"
 
 # and django completion
-#[ -f "$HOME/bin/home_files/django-completion.bash" ] && \
-#    which django-admin.py &>/dev/null && \
-#	source "$HOME/bin/home_files/django-completion.bash"
+[ -f "$HOME/bin/home_files/django-completion.bash" ] && \
+    which django-admin.py &>/dev/null && \
+	source "$HOME/bin/home_files/django-completion.bash"
 
 
 # lifted these from @zeeg
