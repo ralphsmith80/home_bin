@@ -88,5 +88,5 @@ export CLICOLOR="true"
 
 #StoreIQ helpers
 [ -f ~/.ssh/id_dsa_storediq ] && ssh-add ~/.ssh/id_dsa_storediq
-alias syncaa='cd /Users/ralphs/Workspace/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
+alias aasync='cd /Users/ralphs/Workspace/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
 
