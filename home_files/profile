@@ -14,7 +14,8 @@
 
 ### aliasing for convenience
 alias ll='ls -l'
-alias la='ls -la'
+alias la='ls -a'
+alias lal='ls -la'
 alias grep="grep --color"
 alias e='exit'
 alias rm='rm -i'
