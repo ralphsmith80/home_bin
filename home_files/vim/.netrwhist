@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/vendor/gloss/widgets/treegrid2'
-let g:netrw_dirhist_2='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/pages/records'
-let g:netrw_dirhist_3='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/pages'
-let g:netrw_dirhist_4='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static'
-let g:netrw_dirhist_5='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/vendor'
-let g:netrw_dirhist_6='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/vendor/gloss'
-let g:netrw_dirhist_7='/Users/ralphs/Workspace/trunk/deepfiler/parts/ui/djangoweb/static/vendor/gloss/widgets'
