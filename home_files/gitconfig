@@ -15,6 +15,9 @@
 [alias]
     lg = log --graph --decorate --pretty=oneline --abbrev-commit
     lga = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    st = status
+    co = clone
+    ci = commit
 
 [user]
 	name = Ralph Smith

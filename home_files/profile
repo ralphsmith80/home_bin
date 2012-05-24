@@ -92,3 +92,5 @@ export CLICOLOR="true"
 [ -f ~/.ssh/id_dsa_storediq ] && ssh-add ~/.ssh/id_dsa_storediq
 alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
 alias cddeepfiler='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts'
+export PATH="$PATH:node_modules/.bin/"
+export PATH="$PATH:/Users/ralphs/Workspace/bin"

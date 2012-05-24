@@ -10,3 +10,7 @@ Host gitru
 Host aa
     HostName appapp143.storediq.com
     User root
+
+Host sa
+    HostName stacyapp.storediq.com
+    User repo
