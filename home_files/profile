@@ -4,7 +4,6 @@
 
 [ -d /usr/local/mysql/bin ] && export PATH="$PATH:/usr/local/mysql/bin"
 
-[ -d $HOME/Workspace/bin ] && export PATH="$PATH:$HOME/Workspace/bin"
 
 # Your previous /Users/ralphs/.profile file was backed up as /Users/ralphs/.profile.macports-saved_2011-07-16_at_15:01:12
 # MacPorts Installer addition on 2011-07-16_at_15:01:12: adding an appropriate PATH variable for use with MacPorts.
@@ -90,7 +89,7 @@ export CLICOLOR="true"
 
 #StoreIQ helpers
 [ -f ~/.ssh/id_dsa_storediq ] && ssh-add ~/.ssh/id_dsa_storediq
-alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
+alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/bin/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
 alias cddeepfiler='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts'
 export PATH="$PATH:node_modules/.bin/"
-export PATH="$PATH:/Users/ralphs/Workspace/bin"
+[ -d $HOME/Workspace/siq_rsmith/bin ] && export PATH="$PATH:$HOME/Workspace/siq_rsmith/bin"

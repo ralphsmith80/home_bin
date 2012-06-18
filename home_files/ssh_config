@@ -14,3 +14,7 @@ Host aa
 Host sa
     HostName stacyapp.storediq.com
     User repo
+
+Host appstack
+    HostName 172.18.35.29
+    User root
