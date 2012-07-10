@@ -16,5 +16,11 @@ Host sa
     User repo
 
 Host appstack
-    HostName 172.18.35.29
+    HostName 172.18.35.46 
     User root
+
+Host *.storediq.com
+    User rsmith
+
+Host 10.*
+    User rsmith
