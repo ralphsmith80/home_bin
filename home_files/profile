@@ -65,6 +65,11 @@ export CLICOLOR="true"
     which npm &>/dev/null && \
 	source "$HOME/bin/home_files/npm-completion.bash"
 
+# node version manger (nvm)
+NVM_DIR=~/Workspace/nvm
+[ -d $NVM_DIR ] && source $NVM_DIR/nvm.sh
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
 # and my BALLER hack to node.js...
 #[ -f ~/.noderc ] && export NODE_STARTUP="$HOME/.noderc"
 

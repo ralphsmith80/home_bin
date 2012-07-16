@@ -18,10 +18,10 @@ defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 #defaults write com.apple.Safari ProxiesInBookmarksBar '("Top Sites","Reading List")'
 
 # Disable Lion’s press-and-hold for keys in favor of key repeat
-defaults write -g ApplePressAndHoldEnabled -bool false
+#defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
 # Set my friggin host name
-#scutil --set HostName stacebot
+scutil --set HostName agentsmith
