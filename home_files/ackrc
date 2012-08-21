@@ -1,0 +1,6 @@
+--type-set=cheetah=.tmpl
+--type-set=django_template=.djt
+--ignore-dir="Session.vim"
+--type-set=less=.less
+--type-set=mtpl=.mtpl
+

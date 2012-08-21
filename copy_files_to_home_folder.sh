@@ -17,7 +17,7 @@ remove_references "$HOME/.ssh/config"
 ln -s $home_files_dir/ssh_config $HOME/.ssh/config
 
 # the rest of the config files
-for i in profile bashrc vimrc gvimrc pythonrc gitconfig dir_colors Xdefaults\
+for i in profile bashrc vimrc gvimrc ackrc pythonrc gitconfig dir_colors Xdefaults\
     gitignore_global; do
 	remove_references "$HOME/.${i}"
 	ln -s $home_files_dir/${i} $HOME/.${i}
