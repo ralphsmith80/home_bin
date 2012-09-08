@@ -19,6 +19,18 @@ Host appstack
     HostName 172.18.35.46 
     User root
 
+Host appstack-1
+    HostName 172.18.35.20 
+    User root
+
+Host appstack-gw
+    HostName 172.17.18.70 
+    User root
+
+Host appstack-ds
+    HostName 172.17.18.59 
+    User root
+
 Host *.storediq.com
     User rsmith
 
