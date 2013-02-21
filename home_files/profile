@@ -10,6 +10,13 @@
 [ -d /opt/local/bin ] && export PATH="/opt/local/bin:$PATH"
 [ -d /opt/local/sbin ] && export PATH="/opt/local/sbin:$PATH"
 
+# Setting PATH for Python 3.3
+# The orginal version is saved in .profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+# Setup my python path
+PYTHONPATH="/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/"
+export PYTHONPATH="/Library/Python/2.7/site-packages:${PYTHONPATH}"
+
 
 ### aliasing for convenience
 alias ll='ls -l'
@@ -21,6 +28,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files"
 
 
 ### one vim to find them, one vim to rule them all... 
@@ -98,3 +106,4 @@ alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/
 alias cddeepfiler='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts'
 export PATH="$PATH:node_modules/.bin"
 [ -d $HOME/Workspace/siq_rsmith/bin ] && export PATH="$PATH:$HOME/Workspace/siq_rsmith/bin"
+[ -d $HOME/Workspace/util/bin ] && export PATH="$PATH:$HOME/Workspace/util/bin"

@@ -7,16 +7,16 @@ Host gitru
     HostName ralphunlimited.com
     User gitosis
 
-Host appstack
-    HostName 172.18.35.20 
+Host app
+    HostName 10.98.11.61 
     User root
 
 Host gw
-    HostName 172.17.18.70 
+    HostName 10.98.60.105
     User root
 
 Host ds
-    HostName 172.17.18.59 
+    HostName 10.98.60.104
     User root
 
 Host *.storediq.com
