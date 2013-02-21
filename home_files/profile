@@ -107,3 +107,11 @@ alias cddeepfiler='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts'
 export PATH="$PATH:node_modules/.bin"
 [ -d $HOME/Workspace/siq_rsmith/bin ] && export PATH="$PATH:$HOME/Workspace/siq_rsmith/bin"
 [ -d $HOME/Workspace/util/bin ] && export PATH="$PATH:$HOME/Workspace/util/bin"
+
+# tab completion for butler
+_butler_completion() {
+    COMPREPLY=( $(butler --_completion "${COMP_WORDS[*]}") )
+    return 0
+}
+complete -F _butler_completion butler
+
