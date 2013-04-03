@@ -99,6 +99,7 @@ NVM_DIR=~/Workspace/nvm
 
 #Add my ssh key
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
+[ -f ~/.ssh/17mbp_rsa ] && ssh-add ~/.ssh/17mbp_rsa
 
 #StoreIQ helpers
 [ -f ~/.ssh/id_dsa_storediq ] && ssh-add ~/.ssh/id_dsa_storediq
