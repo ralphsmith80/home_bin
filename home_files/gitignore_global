@@ -41,5 +41,4 @@ Thumbs.db
 *.sw[op]
 Session.vim
 .idea
-*sublime.*
-*sublime-*
+*workspace-sublime.*

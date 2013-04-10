@@ -1,0 +1,29 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_face": "Consolas",
+	"font_size": 11.0,
+	"caret_style": "phase",
+	"highlight_line": true,
+	"fade_fold_buttons": false,
+	"expand_tabs": true,
+	"translate_tabs_to_spaces": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"phoenix_color_expanded_folder": true,
+	"phoenix_color_green": true,
+	"phoenix_dirty_bottom_bar": true,
+	"phoenix_dirty_bottom_bar_green": true,
+	"phoenix_eighties": true,
+	"phoenix_highlight_current_tab": true,
+	"phoenix_sidebar_tree_xsmall": true,
+	"phoenix_solid_current_tab": false,
+	"phoenix_tabs_auto_width": true,
+	"phoenix_tabs_small": true,
+	"rulers":
+	[
+		100
+	],
+	"theme": "Phoenix Dark.sublime-theme"
+}
