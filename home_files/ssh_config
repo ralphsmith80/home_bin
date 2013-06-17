@@ -8,7 +8,7 @@ Host gitru
     User gitosis
 
 Host app
-    HostName 10.98.11.61 
+    HostName 10.98.11.184 
     User root
 
 Host gw
