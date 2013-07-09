@@ -1,12 +1,11 @@
 {
+	"caret_style": "phase",
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"expand_tabs": true,
+	"fade_fold_buttons": false,
 	"font_face": "Consolas",
 	"font_size": 11.0,
-	"caret_style": "phase",
 	"highlight_line": true,
-	"fade_fold_buttons": false,
-	"expand_tabs": true,
-	"translate_tabs_to_spaces": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -25,5 +24,6 @@
 	[
 		100
 	],
-	"theme": "Phoenix Dark.sublime-theme"
+	"theme": "Phoenix Dark.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
