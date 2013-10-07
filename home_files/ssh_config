@@ -25,3 +25,7 @@ Host gw
 Host ds
     HostName ds
     User root
+
+Host tutorial_server
+    HostName 10.98.11.184
+    User root
