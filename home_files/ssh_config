@@ -27,5 +27,5 @@ Host ds
     User root
 
 Host tutorial_server
-    HostName 10.98.11.184
+    HostName tutorial_server
     User root
