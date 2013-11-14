@@ -43,3 +43,7 @@ Session.vim
 .idea
 *sublime.*
 *sublime-*
+
+# NPM node_modues #
+###################
+node_modules
