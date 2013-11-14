@@ -7,20 +7,25 @@ Host gitru
     HostName ralphunlimited.com
     User gitosis
 
-Host app
-    HostName 10.98.11.61 
-    User root
-
-Host gw
-    HostName 10.98.60.105
-    User root
-
-Host ds
-    HostName 10.98.60.104
-    User root
-
 Host *.storediq.com
     User rsmith
 
 Host 10.*
     User rsmith
+
+# the hostname for these are defined in /etc/hosts
+Host app
+    HostName app
+    User root
+
+Host gw
+    HostName gw
+    User root
+
+Host ds
+    HostName ds
+    User root
+
+Host tutorial_server
+    HostName tutorial_server
+    User root

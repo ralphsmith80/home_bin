@@ -1,0 +1,8 @@
+{
+	"extensions" :
+	[
+		"mtpl",
+        "djt"
+	],
+	"tab_size" : 2
+}
