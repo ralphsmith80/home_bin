@@ -13,6 +13,9 @@ Host *.storediq.com
 Host 10.*
     User rsmith
 
+Host *.dub.usoh.ibm.com
+    User siqralph
+
 # the hostname for these are defined in /etc/hosts
 Host app
     HostName app
