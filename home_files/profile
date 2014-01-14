@@ -68,15 +68,15 @@ export CLICOLOR="true"
     which git &>/dev/null && \
 	source "$HOME/bin/home_files/git-completion.bash"
 
-# and the npm completion
-[ -f "$HOME/bin/home_files/npm-completion.bash" ] && 
-    which npm &>/dev/null && \
-	source "$HOME/bin/home_files/npm-completion.bash"
-
 # node version manger (nvm)
 NVM_DIR=~/Workspace/nvm
 [ -d $NVM_DIR ] && source $NVM_DIR/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+# and the npm completion
+[ -f "$HOME/bin/home_files/npm-completion.bash" ] && \
+    which npm &>/dev/null && \
+    source "$HOME/bin/home_files/npm-completion.bash"
 
 # and my BALLER hack to node.js...
 #[ -f ~/.noderc ] && export NODE_STARTUP="$HOME/.noderc"
@@ -99,7 +99,6 @@ NVM_DIR=~/Workspace/nvm
 
 #Add my ssh key
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
-[ -f ~/.ssh/17mbp_rsa ] && ssh-add ~/.ssh/17mbp_rsa
 
 #StoreIQ helpers
 alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/bin/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
