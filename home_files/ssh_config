@@ -7,14 +7,7 @@ Host gitru
     HostName ralphunlimited.com
     User gitosis
 
-Host *.storediq.com
-    User rsmith
-
-Host 10.*
-    User rsmith
-
-Host *.dub.usoh.ibm.com
-    User siqralph
+## ---------- IBM ---------- ##
 
 # the hostname for these are defined in /etc/hosts
 Host app
@@ -32,3 +25,35 @@ Host ds
 Host tutorial_server
     HostName tutorial_server
     User root
+
+Host *.dub.usoh.ibm.com
+    User siqralph
+
+Host jumphost
+    User siqralph
+    Hostname colvi0013.dub.usoh.ibm.com
+    Port 22
+        # siqralph-appstack:22
+        LocalForward 15022 127.0.0.1:15022  
+        # siqralph-appstack:80
+        LocalForward 15080 127.0.0.1:15080
+        # siqralph-appstack:443
+        LocalForward 15443 127.0.0.1:15443
+
+        # siqralph-gateway:22
+        LocalForward 15023 127.0.0.1:15023
+        # siqralph-gateway:8765
+        LocalForward 15765 127.0.0.1:15765
+        # siqralph-gateway:80
+        LocalForward 15082 127.0.0.1:15082
+
+        # siqralph-dataserver:22
+        LocalForward 15024 127.0.0.1:15024
+        # siqralph-dataserver:80
+        LocalForward 15081 127.0.0.1:15081
+        # siqralph-dataserver:443
+        LocalForward 15444 127.0.0.1:15444
+        IdentityFile ~/.ssh/id_rsa
+        Ciphers arcfour256
+
+## ---------- END IBM ---------- ##
