@@ -42,6 +42,8 @@ Thumbs.db
 Session.vim
 .idea
 *workspace-sublime.*
+*.sublime-project
+*.sublime-workspace
 
 # NPM node_modues #
 ###################
