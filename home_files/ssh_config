@@ -1,11 +1,20 @@
-Host ru
-    HostName ralphunlimited.com
-    User ralphs
+Host onion
+    HostName onionhater.us
+    User root
     ForwardX11 yes
 
-Host gitru
-    HostName ralphunlimited.com
-    User gitosis
+Host ru
+    HostName 107.170.144.188
+    # HostName ralphunlimited.com
+    User root
+    ForwardX11 yes
+
+Host homeserver
+    # HostName ralphunlimited.com
+    # HostName 173.172.127.253
+    HostName 192.168.0.200
+    User ralphs
+    ForwardX11 yes
 
 ## ---------- IBM ---------- ##
 
@@ -39,6 +48,8 @@ Host jumphost
         LocalForward 15080 127.0.0.1:15080
         # siqralph-appstack:443
         LocalForward 15443 127.0.0.1:15443
+        # socketio testing
+        LocalForward 15081 127.0.0.1:15081
 
         # siqralph-gateway:22
         LocalForward 15023 127.0.0.1:15023
