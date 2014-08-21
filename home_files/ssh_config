@@ -35,6 +35,10 @@ Host tutorial_server
     HostName tutorial_server
     User root
 
+Host ci_server
+    HostName ci_server
+    User root
+
 Host *.dub.usoh.ibm.com
     User siqralph
 
