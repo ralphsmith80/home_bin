@@ -1,0 +1,8 @@
+{
+    "trailing_spaces_highlight_color": "sublimelinter.mark.warning",
+    // don't  show on lines I'm typing on
+    "trailing_spaces_include_current_line": false,
+
+    // remove trailing spaces on save
+    "trailing_spaces_trim_on_save": true
+}
