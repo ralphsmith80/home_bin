@@ -1,6 +1,7 @@
 {
 	"caret_style": "phase",
 	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
 	"expand_tabs": true,
 	"fade_fold_buttons": false,
@@ -26,6 +27,5 @@
 		100
 	],
 	"theme": "Phoenix Dark.sublime-theme",
-	"translate_tabs_to_spaces": true,
-    "ensure_newline_at_eof_on_save": true
+	"translate_tabs_to_spaces": true
 }

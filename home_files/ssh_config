@@ -1,5 +1,6 @@
 Host onion
     HostName onionhater.us
+    #HostName 104.131.249.65
     User root
     ForwardX11 yes
 
@@ -47,18 +48,20 @@ Host jumphost
     Hostname colvi0013.dub.usoh.ibm.com
     Port 22
         # siqralph-appstack:22
-        LocalForward 15022 127.0.0.1:15022  
+        LocalForward 0.0.0.0:15022 127.0.0.1:15022
         # siqralph-appstack:80
-        LocalForward 15080 127.0.0.1:15080
+        LocalForward 0.0.0.0:15080 127.0.0.1:15080
         # siqralph-appstack:443
         LocalForward 15443 127.0.0.1:15443
         # socketio testing
         LocalForward 15081 127.0.0.1:15081
+        # case studio 2 DOBC database modeler
+        LocalForward 0.0.0.0:15000 127.0.0.1:15000
 
         # siqralph-gateway:22
         LocalForward 15023 127.0.0.1:15023
         # siqralph-gateway:8765
-        LocalForward 15765 127.0.0.1:15765
+        LocalForward 0.0.0.0:15765 127.0.0.1:15765
         # siqralph-gateway:80
         LocalForward 15082 127.0.0.1:15082
 
