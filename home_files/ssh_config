@@ -54,7 +54,7 @@ Host jumphost
         # siqralph-appstack:443
         LocalForward 15443 127.0.0.1:15443
         # socketio testing
-        LocalForward 15090 127.0.0.1:15090
+        LocalForward 9990 127.0.0.1:15090
         # case studio 2 DOBC database modeler
         LocalForward 0.0.0.0:15000 127.0.0.1:15000
 
