@@ -5,9 +5,6 @@
         "error_color": "D02000",
         "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
         "gutter_theme_excludes": [],
-        "jshint_options": {
-            "sub": true
-        },
         "lint_mode": "load/save",
         "linters": {
             "jshint": {
