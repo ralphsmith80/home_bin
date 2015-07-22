@@ -1,31 +1,22 @@
 {
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
 	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
 	"expand_tabs": true,
 	"fade_fold_buttons": false,
-	"font_face": "Inconsolata",
+	"flatland_sidebar_tree_xsmall": true,
+	"flatland_square_tabs": true,
+	"font_face": "Source Code Pro",
 	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"phoenix_color_expanded_folder": true,
-	"phoenix_color_green": true,
-	"phoenix_dirty_bottom_bar": true,
-	"phoenix_dirty_bottom_bar_green": true,
-	"phoenix_eighties": true,
-	"phoenix_highlight_current_tab": true,
-	"phoenix_sidebar_tree_xsmall": true,
-	"phoenix_solid_current_tab": false,
-	"phoenix_tabs_auto_width": true,
-	"phoenix_tabs_small": true,
 	"rulers":
 	[
 		100
 	],
-	"theme": "Phoenix Dark.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"theme": "Flatland Dark.sublime-theme"
 }

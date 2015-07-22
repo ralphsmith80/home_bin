@@ -18,24 +18,26 @@
     st = status
     co = clone
     ci = commit
+    #https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
+    update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
 
 [user]
-	name = Ralph Smith
-	email = agentsmith@us.ibm.com
+    name = Ralph Smith
+    email = agentsmith@us.ibm.com
 
 [core]
-	excludesfile = /Users/ralphs/.gitignore_global
-	quotepath = false
+    excludesfile = /Users/ralphs/.gitignore_global
+    quotepath = false
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [push]
-	default = current
+    default = current
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f

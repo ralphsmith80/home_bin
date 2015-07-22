@@ -2,13 +2,11 @@ Host onion
     HostName onionhater.us
     #HostName 104.131.249.65
     User root
-    ForwardX11 yes
 
 Host ru
     HostName 107.170.144.188
     # HostName ralphunlimited.com
     User root
-    ForwardX11 yes
 
 Host homeserver
     # HostName ralphunlimited.com
@@ -41,11 +39,22 @@ Host ci_server
     User root
 
 Host *.dub.usoh.ibm.com
-    User siqralph
+    User siqralph-us
 
+Host git.siqbuild.lab
+    User siqralph-us
+    Hostname siq-git.dub.usoh.ibm.com
+    Port 2222
+
+#### -------- JUMPHOSTS ------------ ###
 Host jumphost
+    Hostname colv0223.col.eslabs.ibm.com
+
+Host jumphost2
+    Hostname colv0222.col.eslabs.ibm.com
+
+Host jumphost jumphost2
     User siqralph
-    Hostname colvi0013.dub.usoh.ibm.com
     Port 22
         # siqralph-appstack:22
         LocalForward 0.0.0.0:15022 127.0.0.1:15022
@@ -54,7 +63,7 @@ Host jumphost
         # siqralph-appstack:443
         LocalForward 15443 127.0.0.1:15443
         # socketio testing
-        LocalForward 9990 127.0.0.1:15090
+        LocalForward 0.0.0.0:9990 127.0.0.1:15090
         # case studio 2 DOBC database modeler
         LocalForward 0.0.0.0:15000 127.0.0.1:15000
 
