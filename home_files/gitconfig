@@ -18,7 +18,9 @@
     st = status
     co = clone
     ci = commit
-    #https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
+    # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
+    # usage: `git update-from <remote> <branch-name>`
+    # example: `git update-from origin master`
     update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
 
 [user]
@@ -39,5 +41,9 @@
 [push]
     default = current
 [filter "media"]
-    clean = git-media-clean %f
-    smudge = git-media-smudge %f
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f

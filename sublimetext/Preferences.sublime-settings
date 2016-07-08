@@ -1,15 +1,15 @@
 {
-	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
-	"detect_indentation": true,
-	"ensure_newline_at_eof_on_save": true,
-	"expand_tabs": true,
-	"fade_fold_buttons": false,
-	"flatland_sidebar_tree_xsmall": true,
-	"flatland_square_tabs": true,
-	"font_face": "Source Code Pro",
-	"font_size": 11,
-	"highlight_line": true,
+	"caret_style"						: "phase",
+	"color_scheme"						: "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
+	"detect_indentation"				: true,
+	"ensure_newline_at_eof_on_save"		: true,
+	"expand_tabs"						: true,
+	"fade_fold_buttons"					: false,
+	"flatland_sidebar_tree_xsmall"		: true,
+	"flatland_square_tabs"				: true,
+	"font_face"							: "Source Code Pro",
+	"font_size"							: 11,
+	"highlight_line"					: true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -18,5 +18,5 @@
 	[
 		100
 	],
-	"theme": "Flatland Dark.sublime-theme"
+	"theme"								: "Flatland Dark.sublime-theme"
 }

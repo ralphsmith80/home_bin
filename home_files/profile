@@ -12,10 +12,10 @@
 
 # Setting PATH for Python 3.3
 # The orginal version is saved in .profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+# export PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
 # Setup my python path
-PYTHONPATH="/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/"
-export PYTHONPATH="/Library/Python/2.7/site-packages:${PYTHONPATH}"
+# PYTHONPATH="/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/"
+# export PYTHONPATH="/Library/Python/2.7/site-packages:${PYTHONPATH}"
 
 
 ### aliasing for convenience
@@ -91,10 +91,7 @@ NVM_DIR=~/Workspace/nvm
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
 
 #StoreIQ helpers
-alias aasync='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts; /Users/ralphs/Workspace/siq_rsmith/bin/rsyncsiq.sh ./* root@appapp143:/usr/lib/python2.4/site-packages/deepfile/; cd -;'
-alias cddeepfiler='cd /Users/ralphs/Workspace/siq_repo/trunk/deepfiler/parts'
 export PATH="$PATH:node_modules/.bin"
-[ -d $HOME/Workspace/siq_rsmith/bin ] && export PATH="$PATH:$HOME/Workspace/siq_rsmith/bin"
 [ -d $HOME/Workspace/util/bin ] && export PATH="$PATH:$HOME/Workspace/util/bin"
 
 # tab completion for butler
@@ -103,3 +100,7 @@ _butler_completion() {
     return 0
 }
 complete -F _butler_completion butler
+
+#pyenv stuff
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
