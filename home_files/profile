@@ -89,18 +89,3 @@ NVM_DIR=~/Workspace/nvm
 
 #Add my ssh key
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
-
-#StoreIQ helpers
-export PATH="$PATH:node_modules/.bin"
-[ -d $HOME/Workspace/util/bin ] && export PATH="$PATH:$HOME/Workspace/util/bin"
-
-# tab completion for butler
-_butler_completion() {
-    COMPREPLY=( $(butler --_completion "${COMP_WORDS[*]}") )
-    return 0
-}
-complete -F _butler_completion butler
-
-#pyenv stuff
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
