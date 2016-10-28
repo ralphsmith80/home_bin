@@ -84,8 +84,11 @@ NVM_DIR="$HOME/.nvm"
 	source "$HOME/bin/home_files/django-completion.bash"
 
 # brew tab completion
-[ -d `brew --repository` ] && \
-    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+# install brew first
+#   `brew install bash-completion`
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 #Add my ssh key
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
