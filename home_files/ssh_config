@@ -15,6 +15,10 @@ Host homeserver
     User ralphs
     ForwardX11 yes
 
-Host uim
-    HostName 10.238.72.25
-    User administrator
+Host dev
+    HostName 10.238.40.232
+    User root
+
+Host dev-db
+    HostName 10.238.40.207 
+    User root
