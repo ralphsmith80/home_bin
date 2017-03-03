@@ -15,6 +15,9 @@
 [alias]
     lg = log --graph --decorate --pretty=oneline --abbrev-commit
     lga = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
     st = status
     co = clone
     ci = commit
@@ -22,6 +25,15 @@
     # usage: `git update-from <remote> <branch-name>`
     # example: `git update-from origin master`
     update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+    # http://stackoverflow.com/questions/17195861/undo-git-update-index-assume-unchanged-file
+    # to leave the file in the repo but ignore future changes to it:
+    # git update-index --assume-unchanged <file>
+    ignore-file = update-index --assume-unchanged
+    # and to undo this:
+    # git update-index --no-assume-unchanged <file>
+    unignore-file = update-index --no-assume-unchanged
+    # to find out which files have been set this way:
+    # git ls-files -v|grep '^h'
 
 [user]
     name = Ralph Smith
@@ -33,7 +45,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
