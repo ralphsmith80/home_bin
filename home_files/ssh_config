@@ -1,24 +1,7 @@
 Host onion
     HostName onionhater.us
-    #HostName 104.131.249.65
     User root
 
 Host ru
-    HostName 107.170.144.188
-    # HostName ralphunlimited.com
-    User root
-
-Host homeserver
-    # HostName ralphunlimited.com
-    # HostName 173.172.127.253
-    HostName 192.168.0.200
-    User ralphs
-    ForwardX11 yes
-
-Host dev
-    HostName 10.238.40.232
-    User root
-
-Host dev-db
-    HostName 10.238.40.207 
+    HostName ralphunlimited.com
     User root
