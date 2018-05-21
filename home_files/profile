@@ -92,6 +92,3 @@ fi
 
 #Add my ssh key
 [ -f ~/.ssh/id_rsa_mbp-1 ] && ssh-add ~/.ssh/id_rsa_mbp-1
-
-#CA specific
-alias cp-to-dev='scp -r ~/Workspace/operator-console/operatorconsole-ui/build/jsp/* root@10.238.40.232:/opt/nimsoft/probes/service/wasp/webapps/operatorconsole_portlet/jsp/'
