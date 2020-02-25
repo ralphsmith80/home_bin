@@ -37,24 +37,25 @@
 
 [user]
     name = Ralph Smith
-    email = ralphsmith80@gmail.com
+	email = ralph.smith@bottomline.com
 
 [core]
     excludesfile = ~/.gitignore_global
     quotepath = false
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+[diff]
+    tool = vscode
 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
 [push]
     default = current
+
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean %f
