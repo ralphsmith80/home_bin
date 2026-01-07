@@ -37,7 +37,7 @@
 
 [user]
     name = Ralph Smith
-	email = ralph.smith@bottomline.com
+	email = devralph@fastmail.com
 
 [core]
     excludesfile = ~/.gitignore_global
